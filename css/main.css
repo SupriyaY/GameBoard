@@ -1,0 +1,268 @@
+
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background: #001021;
+    background-size: cover;
+}
+
+
+
+header {
+    background: #001021;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    flex-direction: flex-end; 
+}
+
+button {
+    text-decoration: none;
+    color: #E9C46A;
+        font-family: 'Viga',
+        sans-serif;
+}
+
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* additional css for jeopardy title */
+
+#title h1 {
+    font-family: 'Monoton', cursive;
+    color: #F4A261;
+    font-size: 4em;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+/* may be redundant - focus on DRY */
+
+#title h1 {
+    font-family: 'Monoton', cursive;
+    color: #F4A261;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+
+
+@-webkit-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+}
+
+
+h3 {
+    color: #F4A261;
+    font-family: 'Viga', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Viga', sans-serif;
+}
+
+a{
+ text-decoration: none;
+ color: black;
+}
+
+button{
+background-color: #E9C46A;
+color: white;
+font-size: 1em;
+margin: 1em;
+padding: 0.25em 1em;
+border-radius: 3px;
+}
+
+
+
+.gameboard {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+/* .box {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     box-sizing: border-box;
+     padding: 20px ;
+}   */
+
+/* CSS grid: fr mean  */
+
+.box {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: .1em;
+    align-items: center;
+}
+
+.box div {
+    background-color: #2A9D8F;
+    height: 80px;
+    width: 160px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px 3px #264653;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 5px 5px 5px 5px;
+        font-family: 'Viga',
+        sans-serif;
+
+}
+
+
+.highlight {
+       background-color: red;
+       height: 80px;
+       width: 160px;
+       border-radius: 3px;
+       box-shadow: 3px 3px 3px 3px #264653;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       box-sizing: border-box;
+       margin: 5px 5px 5px 5px;
+}
+
+
+
+.box div:hover {
+    color: #E9C46A;
+}
+
+footer {
+    height: 10vh;
+    width: 100vw;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3{
+margin-left: 10px;
+ color: #F4A261;
+ font-family: 'Viga',
+ sans-serif;
+}
+
+.pointcounter {
+    background-color : #2A9D8F;
+    height: 20px;
+    width: 50px;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px #264653;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    font-size: 1.5em;
+}
+
+p {
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    font-size: 1.8em;
+}
+
+/* 
+Modal Styling */
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

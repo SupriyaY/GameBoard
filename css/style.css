@@ -1,0 +1,51 @@
+/* Game board */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.piece {
+    /* height: 100px;
+    width: 100px; */
+    border: dotted #FFF 2px;
+    background-color: #2744EA
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+
+h1 {
+    font-family: 'Bowlby One', cursive;
+    color: yellow;
+    text-shadow: 5px 5px #000;
+        -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+    font-size: 5em;
+    align-items: center;
+    margin-bottom: 0;
+    text-align: center;
+}
+/* 
+@-webkit-keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 40px;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px;
+    }
+} */
