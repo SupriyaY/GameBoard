@@ -3,7 +3,6 @@
 
 For my first project, I chose to create a jeopardy gameboard. After the user navigates to the URL for the game's website, the game will start once the user selects one of the boxes with a point value on it.  Once a game piece is selected, the player will see the question and an input field for the answer in an alert box.  The total score can go up or down depending on whether the question is answered correctly or incorrectly.  Once a question has been answered, the point value on the game piece will disappear, and the question can no longer be answered.
 
-**Link to the game site** <http://supriyay-jeopardy.bitballoon.com/>
 
 ## Technology Used
 
